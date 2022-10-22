@@ -42,6 +42,10 @@ const loadItems = async (id) => {
 }
 
 const displayAllItems = (categories) => {
+    if (categories.length === 0) {
+        const emptyMsg = document.getElementById('empty-msg');
+        emptyMsg.classList.remove('d-none');
+    }
     const displayCategoriesField = document.getElementById('display-categories');
     displayCategoriesField.textContent = '';
     categories.forEach(category => {

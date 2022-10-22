@@ -10,50 +10,32 @@
     <script src="https://kit.fontawesome.com/763e3f2741.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <div>
-                <img src="pictures/logo.png" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn" href="#">Link</a>
-                        </li>
-                    </ul>
+<body id="home">
+    <section>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div>
+                    <img src="pictures/logo.png" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Link</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <hr class="5px solid">
-
-    <body>
-        <section>
-            <div id="category-items" class="row row-cols-sm-1 row-cols-md-auto">
-            </div>
-        </section>
-        <section>
-            <div id="display-categories" class="row row-cols-1 row-cols-md-2 g-4">
-            </div>
-        </section>
-
-        <section>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-            </div>
-        </section>
-
-        <section>
-            <!-- Button trigger modal -->
 
 
             <!-- Modal -->
@@ -62,11 +44,14 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Answers Of Some Question</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div id="modal-body" class="modal-body">
-
+                        <div class="modal-body">
+                            1. Var: It can be updated and re-declared into the scope. <br> Let: It can be updated but
+                            cannot
+                            be
+                            re-declared into the scope. <br> const:It cannot be updated or re-declared into the scope.
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -74,9 +59,53 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </nav>
+    </section>
+    <hr class="5px solid">
 
-    </body>
+
+    <section>
+        <div id="category-items" class="row row-cols-sm-1 row-cols-md-auto">
+        </div>
+    </section>
+    <section>
+        <div id="display-categories" class="row row-cols-1 row-cols-md-2 g-4">
+        </div>
+    </section>
+
+    <section>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div id="empty-msg" class="d-none">
+            <h1>No Categories Available</h1>
+        </div>
+    </section>
+    <section>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal-body" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
