@@ -46,8 +46,13 @@ const displayAllItems = (categories) => {
         const emptyMsg = document.getElementById('empty-msg');
         emptyMsg.classList.remove('d-none');
     }
+    else {
+        const emptyMsg = document.getElementById('empty-msg');
+        emptyMsg.classList.add('d-none');
+    }
     const displayCategoriesField = document.getElementById('display-categories');
     displayCategoriesField.textContent = '';
+    // displayCategoriesField.innerHTML = '';
     categories.forEach(category => {
         console.log(category);
         const displayCategoryItem = document.createElement('div');
